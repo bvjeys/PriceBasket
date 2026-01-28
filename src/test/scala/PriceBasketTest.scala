@@ -4,10 +4,10 @@ import com.shopping.model.{Basket, Item}
 import com.shopping.offers.{AppleDiscountOffer, SoupAndBreadOffer}
 import com.shopping.services.CheckoutReceipt
 
-import org.scalatest.flatspec.AnyFlatSpec
+import org.scalatest.funsuite.AnyFunSuite
 import org.scalatest.matchers.should.Matchers
 
-class PriceBasketTest extends AnyFlatSpec with Matchers  {
+class PriceBasketTest extends AnyFunSuite with Matchers  {
 
   // Define items available for purchase
   val Soup = Item("Soup", BigDecimal("0.65"))
@@ -18,9 +18,8 @@ class PriceBasketTest extends AnyFlatSpec with Matchers  {
   // The service under test, with all available offers
   val checkoutReceipt = new CheckoutReceipt(List(AppleDiscountOffer, SoupAndBreadOffer))
 
-  behavior of "checkoutReceipt"
 
-  it should "correctly price a basket with one of each item" in {
+  test("correctly price a basket with one of each item") {
     val basket = Basket(List(Apples, Milk, Bread))
     val receipt = checkoutReceipt.calculatePrice(basket)
     receipt.subtotal should be (BigDecimal("3.10"))
@@ -29,7 +28,7 @@ class PriceBasketTest extends AnyFlatSpec with Matchers  {
     receipt.total should be (BigDecimal("3.00"))
   }
 
-  it should "output a message if no offers are available" in {
+  test("output a message if no offers are available") {
     val basket = Basket(List(Milk, Bread))
     val receipt = checkoutReceipt.calculatePrice(basket)
     receipt.subtotal should be (BigDecimal("2.10"))
@@ -37,7 +36,7 @@ class PriceBasketTest extends AnyFlatSpec with Matchers  {
     receipt.total should be (BigDecimal("2.10"))
   }
 
-  it should "apply half price bread discount for two tins of soup" in {
+  test("apply half price bread discount for two tins of soup") {
     val basket = Basket(List(Soup, Soup, Bread))
     val receipt = checkoutReceipt.calculatePrice(basket)
     receipt.subtotal should be (BigDecimal("2.10")) // 0.65 + 0.65 + 0.80
@@ -46,7 +45,7 @@ class PriceBasketTest extends AnyFlatSpec with Matchers  {
     receipt.total should be (BigDecimal("1.70"))
   }
 
-  it should "not apply bread discount if there is only one soup" in {
+  test("not apply bread discount if there is only one soup") {
     val basket = Basket(List(Soup, Bread))
     val receipt = checkoutReceipt.calculatePrice(basket)
     receipt.subtotal should be (BigDecimal("1.45"))
@@ -54,7 +53,7 @@ class PriceBasketTest extends AnyFlatSpec with Matchers  {
     receipt.total should be (BigDecimal("1.45"))
   }
 
-  it should "apply both apple and soup offers correctly" in {
+  test("apply both apple and soup offers correctly") {
     val basket = Basket(List(Apples, Soup, Soup, Bread))
     val receipt = checkoutReceipt.calculatePrice(basket)
     receipt.subtotal should be (BigDecimal("3.10"))
@@ -66,7 +65,7 @@ class PriceBasketTest extends AnyFlatSpec with Matchers  {
     receipt.total should be (BigDecimal("2.60"))
   }
 
-  it should "handle an empty basket" in {
+  test("handle an empty basket") {
     val basket = Basket(List.empty)
     val receipt = checkoutReceipt.calculatePrice(basket)
     receipt.subtotal should be (BigDecimal("0.00"))
@@ -74,7 +73,7 @@ class PriceBasketTest extends AnyFlatSpec with Matchers  {
     receipt.total should be (BigDecimal("0.00"))
   }
 
-  it should "handle multiple apples" in {
+  test("handle multiple apples") {
     val basket = Basket(List(Apples, Apples))
     val receipt = checkoutReceipt.calculatePrice(basket)
     receipt.subtotal should be (BigDecimal("2.00"))
