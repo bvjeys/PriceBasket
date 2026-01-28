@@ -1,2 +1,2 @@
 # PriceBasket
-PriceBasket
+PriceBasket application for supermarket
