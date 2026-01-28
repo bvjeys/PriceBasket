@@ -8,7 +8,7 @@ object AppleDiscountOffer extends Offer {
     val appleCount = basket.items.count(_.name == "Apples")
     if (appleCount > 0) {
       val applePrice = basket.items.find(_.name == "Apples").map(_.price).getOrElse(BigDecimal(0))
-      val discountAmount = (applePrice * 0.1 * appleCount)
+      val discountAmount = (applePrice * 0.1 * appleCount).setScale(2, BigDecimal.RoundingMode.HALF_UP)
       Some(Discount("Apples 10% off", discountAmount))
     } else {
       None
