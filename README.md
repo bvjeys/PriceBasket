@@ -1,4 +1,4 @@
-# Scala Programming based PriceBasket application
+# Scala Program based PriceBasket application
 
 # Prerequisite - Your Windows Environment should have JDK 8+ setup
 
