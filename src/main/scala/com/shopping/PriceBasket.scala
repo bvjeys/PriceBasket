@@ -7,9 +7,7 @@ import com.shopping.services.CheckoutReceipt
 import com.shopping.items.ItemPriceList
 import com.shopping.formatOutput.ReceiptFormat
 
-object PriceBasket {
-
-  def main(args: Array[String]): Unit = {
+object PriceBasket extends App {
 
     // Converts the args into two List of valid and invalid items
     val (validItems, invalidItems) = args.toList.partition(arg => ItemPriceList.priceList.contains(arg.capitalize))
@@ -31,6 +29,5 @@ object PriceBasket {
     // Formatting and print the final receipt to the console
     val fmt = new ReceiptFormat()
     fmt.formatOutput(receipt)
-    
-  }
+
 }
