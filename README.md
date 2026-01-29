@@ -54,14 +54,19 @@ Step 4: In IDE, go to Project Structure -> Project -> Select the JDK which you h
 Step 5: In IDE, go to Project Structure -> Global Libraries -> Click + to installed Scala SDK 2.11.12 version
 
 Step 6: Then, in the project navigate to PriceBasket.scala and run it
-	Main Class - 
-		com.pricebasket.application.com.shopping.PriceBasket
-	Arguments - 
-		Apple Milk Bread
+
+	Main Class -
+			com.pricebasket.application.com.shopping.PriceBasket
+	
+	Arguments -
+			Apple Milk Bread
 
 The output of IntelliJ IDE will be 
 
 "C:\Program Files\Java\jdk-10.0.2\bin\java.exe" "-javaagent:C:\Users\HP\AppData\Local\Programs\IntelliJ IDEA 2025.3.2\lib\idea_rt.jar=58693" -Dfile.encoding=UTF-8 -classpath D:\project\PriceBasket\target\scala-3.3.7\classes;C:\Users\HP\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala3-library_3\3.3.7\scala3-library_3-3.3.7.jar;C:\Users\HP\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.13.16\scala-library-2.13.16.jar com.pricebasket.application.com.shopping.PriceBasket Apples Milk Bread
+
 Subtotal: £3.10
+
 Apples 10% off: 10p
+
 Total price: £3.00
