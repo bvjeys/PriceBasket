@@ -14,11 +14,11 @@ Step 3: Install sbt for running the program
 
 Step 4: Now, navigate into the cloned Repo - PriceBasket and open command Prompt, type sbt
 	
-	D:\project\PriceBasket> sbt
+	sbt
 
 Step 5: To run the PriceBasket application, type as mentioned below
 	
-	sbt:PriceBasket> runMain com.pricebasket.application.com.shopping.PriceBasket Apples Milk Bread
+	runMain com.pricebasket.application.com.shopping.PriceBasket Apples Milk Bread
 
 # Kindly note, the Pound symbol is not properly displayed in command prompt. So, the output will be like 
 
