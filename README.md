@@ -33,4 +33,4 @@ Total price: ┬ú3.00
 [success] Total time: 0 s, completed 29-Jan-2026, 9:38:49 PM
 
 You could run the same application in IntelliJ IDE which shows the Pound symbol properly. 
-I have given the snapshot of the run using IntelliJ IDE
+I have attached - Application_Executed_Output.jpg the snapshot of the run output using IntelliJ IDE
