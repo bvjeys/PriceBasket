@@ -56,10 +56,10 @@ Step 5: In IDE, go to Project Structure -> Global Libraries -> Click + to instal
 Step 6: Then, in the project navigate to PriceBasket.scala and run it
 
 Main Class -
-			com.pricebasket.application.com.shopping.PriceBasket
+	com.pricebasket.application.com.shopping.PriceBasket
 	
 Arguments -
-			Apple Milk Bread
+	Apple Milk Bread
 
 The output of IntelliJ IDE will be 
 
