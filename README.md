@@ -23,6 +23,7 @@ Step 5: To run the PriceBasket application, type as mentioned below
 # Kindly note, the Pound symbol is not properly displayed in command prompt. So, the output will be like 
 
 [info] running com.pricebasket.application.com.shopping.PriceBasket Apples Milk Bread
+
 Subtotal: ┬ú3.10
 Apples 10% off: 10p
 Total price: ┬ú3.00
