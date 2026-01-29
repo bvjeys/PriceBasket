@@ -1,4 +1,9 @@
 # Scala Program based PriceBasket application
+# About the application:
+The application calculates the subtotal and the Total price when you pass the Items as an argument to the application.
+Subtotal is without the offer price
+If there are any offers on the Items automatically the offers will be applied
+The Total price gives you the value after applying the discount on the actual Item Price
 
 # Prerequisite - Your Windows Environment should have JDK 8+ setup
 
