@@ -2,7 +2,7 @@
 
 # Prerequisite - Your Windows Environment should have JDK 8+ setup
 
-# Steps to run the application in Windows Environment:
+# Steps to run the application in Windows Environment using SBT:
 
 Step 1: Download GitHub Desktop for Windows and install it - https://desktop.github.com/download/
 
