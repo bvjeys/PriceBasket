@@ -12,11 +12,11 @@ Step 2: Clone the Repository - https://github.com/bvjeys/PriceBasket.git
 Step 3: Install sbt for running the program 
 	Open https://www.scala-sbt.org/download/ , download and install - sbt-1.12.0.msi (Windows)
 
-Step 4: Now, navigate into the cloned Repo - PriceBasket and open command Prompt, type sbt
+Step 4: Now, navigate into the cloned Repo - PriceBasket and open command Prompt, type "sbt" . It will launch sbt for you to run the application. 
 	
 	sbt
 
-Step 5: To run the PriceBasket application, type as mentioned below
+Step 5: To run the PriceBasket application, type command as mentioned below, PriceBasket is the main object name followed by arguments(Items)
 	
 	runMain com.pricebasket.application.com.shopping.PriceBasket Apples Milk Bread
 
