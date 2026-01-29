@@ -25,8 +25,11 @@ Step 5: To run the PriceBasket application, type as mentioned below
 [info] running com.pricebasket.application.com.shopping.PriceBasket Apples Milk Bread
 
 Subtotal: ┬ú3.10
+
 Apples 10% off: 10p
+
 Total price: ┬ú3.00
+
 [success] Total time: 0 s, completed 29-Jan-2026, 9:38:49 PM
 
 You could run the same application in IntelliJ IDE which shows the Pound symbol properly. 
