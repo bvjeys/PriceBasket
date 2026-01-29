@@ -7,7 +7,7 @@
 Step 1: Download GitHub Desktop for Windows and install it - https://desktop.github.com/download/
 
 Step 2: Clone the Repository - https://github.com/bvjeys/PriceBasket.git
-        After installing GitHub, right click in any folder and open git bash here to clone the repo
+        After installing GitHub, right click in a folder and open git bash here to clone the repo
 
 Step 3: Install sbt for running the program 
 	Open https://www.scala-sbt.org/download/ , download and install - sbt-1.12.0.msi (Windows)
